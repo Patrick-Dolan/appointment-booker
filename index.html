@@ -8,8 +8,34 @@
   <title></title>
 </head>
 <body>
-  <h1>Appointments</h1>
-  <hr>
-  
+  <div class="container">
+    <h1>Appointments</h1>
+    <hr>
+    <form id="appointment">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="appDescription">Reason for Visit:</label>
+        <input id="appDescription" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="date">Appointment Date:</label>
+        <input id="date" class="form-control" type="date">
+      </div>
+      <div class="form-group">
+        <label for="startTime">Appointment Start Time:</label>
+        <input id="startTime" class="form-control" type="time">
+      </div>
+      <div class="form-group">
+        <label for="endTime">Appointment End Time:</label>
+        <input id="endTime" class="form-control" type="time">
+      </div>
+    </form>
+    <div id="appConfirmation">
+      
+    </div>
+  </div>
 </body>
 </html>
