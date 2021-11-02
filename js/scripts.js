@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#appointment").submit(function(event) {
+  $("#appointmentForm").submit(function(event) {
     event.preventDefault();
     const name = $("#name").val();
     const appDescription = $("#appDescription").val();
@@ -11,5 +11,7 @@ $(document).ready(function() {
     $(".date").append(date);
     $(".startTime").append(startTime);
     $(".endTime").append(endTime);
+    $("#appointmentForm").slideUp();
+    $("#appConfirmation").show();
   });
 });
